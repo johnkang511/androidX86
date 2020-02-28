@@ -188,7 +188,7 @@
   <remove-project name="toolchain/pgo-profiles" />
 
   <!-- From Android-x86 repositories -->
-  <remote  name="x86" fetch="." />
+  <remote  name="x86" fetch="http://scm.osdn.net/gitroot/android-x86/" />
 
   <project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.19" />
   <project path="bionic" name="platform/bionic" remote="x86" revision="pie-x86" />
@@ -249,5 +249,10 @@
   <project path="system/extras" name="platform/system/extras" remote="x86" revision="pie-x86" />
   <project path="system/media" name="platform/system/media" remote="x86" revision="pie-x86" />
   <project path="system/vold" name="platform/system/vold" remote="x86" revision="pie-x86" />
+
+  <remote  name="ffmpeg" fetch="https://git.ffmpeg.org/" />
+  <project path="external/ffmpeg1" name="ffmpeg.git" remote="ffmpeg" revision="release/4.2" />
+  <remote  name="mydevice" fetch="https://github.com/johnkang511/" />
+  <project path="device/" name="test.git" remote="mydevice" revision="master" />
 
 </manifest>
